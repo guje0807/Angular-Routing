@@ -1,0 +1,6 @@
+<ul class="list-group">
+    <li *ngFor = "let name of Products" class="list-group-item">
+        {{name.name}}
+        <a [routerLink] = "['/products',name.id]"> Details </a>
+    </li>
+</ul>
